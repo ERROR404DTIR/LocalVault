@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" width="860" height="260" role="img" aria-label="Built-in authenticator codes with countdown">
+  <title>Built-in authenticator</title>
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif}
+    .mono{font-family:SFMono-Regular,Consolas,'DejaVu Sans Mono',Menlo,monospace}
+    .ring{transform:rotate(-90deg);transform-origin:130px 130px;stroke-dasharray:439.82;animation:count 10s linear infinite}
+    @keyframes count{from{stroke-dashoffset:0}to{stroke-dashoffset:439.82}}
+    .a{animation:swapA 20s steps(1) infinite}
+    .b{animation:swapB 20s steps(1) infinite}
+    @keyframes swapA{0%{opacity:1}50%{opacity:0}}
+    @keyframes swapB{0%{opacity:0}50%{opacity:1}}
+  </style>
+  <rect width="860" height="260" rx="18" fill="#0B131D"/>
+  <rect x=".5" y=".5" width="859" height="259" rx="18" fill="none" stroke="#263B55"/>
+  <circle cx="130" cy="130" r="70" fill="none" stroke="#263B55" stroke-width="10"/>
+  <circle class="ring" cx="130" cy="130" r="70" fill="none" stroke="#4FD1C5" stroke-width="10" stroke-linecap="round"/>
+  <g class="mono" font-size="26" font-weight="700" fill="#4FD1C5" text-anchor="middle">
+    <text class="a" x="130" y="139">482 913</text>
+    <text class="b" x="130" y="139">071 586</text>
+  </g>
+  <text class="sans" x="260" y="92" font-size="22" font-weight="700" fill="#E6EDF5">Built-in authenticator</text>
+  <g class="sans" font-size="15" fill="#8FA3BA">
+    <text x="260" y="124">Paste a TOTP secret or an otpauth:// link next to a login.</text>
+    <text x="260" y="150">LocalVault shows the live 6-digit code with a countdown,</text>
+    <text x="260" y="176">so the second factor lives in the same encrypted vault.</text>
+  </g>
+  <text class="mono" x="260" y="214" font-size="13" fill="#F2B544">RFC 6238 · SHA-1 / SHA-256 / SHA-512 · 6-8 digits</text>
+</svg>

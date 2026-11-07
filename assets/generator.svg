@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 330" width="860" height="330" role="img" aria-label="Animated password generator preview">
+  <title>Password generator</title>
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif}
+    .mono{font-family:SFMono-Regular,Consolas,'DejaVu Sans Mono',Menlo,monospace}
+    .cand{opacity:0;animation:show 6s linear infinite}
+    .c2{animation-delay:-4.5s}.c3{animation-delay:-3s}.c4{animation-delay:-1.5s}
+    @keyframes show{0%,23%{opacity:1}26%,100%{opacity:0}}
+    .seg{opacity:.15;animation:fill 1.5s linear infinite}
+    .s2{animation-name:fill2}.s3{animation-name:fill3}.s4{animation-name:fill4}
+    @keyframes fill{0%{opacity:.15}6%,100%{opacity:1}}
+    @keyframes fill2{0%,8%{opacity:.15}14%,100%{opacity:1}}
+    @keyframes fill3{0%,16%{opacity:.15}22%,100%{opacity:1}}
+    @keyframes fill4{0%,24%{opacity:.15}30%,100%{opacity:1}}
+    .knob{animation:slide 6s ease-in-out infinite alternate}
+    @keyframes slide{from{transform:translateX(0)}to{transform:translateX(190px)}}
+    .fillbar{animation:grow 6s ease-in-out infinite alternate;transform-origin:40px 0}
+    @keyframes grow{from{transform:scaleX(.3)}to{transform:scaleX(.82)}}
+  </style>
+  <rect width="860" height="330" rx="18" fill="#0B131D"/>
+  <rect x=".5" y=".5" width="859" height="329" rx="18" fill="none" stroke="#263B55"/>
+  <text class="sans" x="40" y="46" font-size="20" font-weight="700" fill="#E6EDF5">Password generator</text>
+  <rect x="40" y="64" width="780" height="64" rx="12" fill="#192A3E" stroke="#263B55"/>
+  <g class="mono" font-size="26" fill="#E6EDF5" text-anchor="middle">
+    <text class="cand" x="430" y="105">Vq7#kT2$mZ9&amp;xR4!pL8@</text>
+    <text class="cand c2" x="430" y="105">n3^Hw8Ud!cB5*yF2sQ7%</text>
+    <text class="cand c3" x="430" y="105">g9@Lx4$Pm2#Tz6&amp;Kd1!r</text>
+    <text class="cand c4" x="430" y="105">Yb5!eN8^Ws3#jA7*Cq2$</text>
+  </g>
+  <g>
+    <rect class="seg" x="40" y="146" width="186" height="6" rx="3" fill="#3FB68B"/>
+    <rect class="seg s2" x="238" y="146" width="186" height="6" rx="3" fill="#3FB68B"/>
+    <rect class="seg s3" x="436" y="146" width="186" height="6" rx="3" fill="#3FB68B"/>
+    <rect class="seg s4" x="634" y="146" width="186" height="6" rx="3" fill="#3FB68B"/>
+  </g>
+  <text class="sans" x="40" y="176" font-size="13" fill="#8FA3BA">Excellent. Every character comes from your OS secure random source.</text>
+
+  <rect x="40" y="196" width="780" height="104" rx="14" fill="#121E2D" stroke="#263B55"/>
+  <text class="sans" x="64" y="226" font-size="14" fill="#E6EDF5">Length</text>
+  <rect x="64" y="244" width="300" height="6" rx="3" fill="#263B55"/>
+  <rect class="fillbar" x="64" y="244" width="300" height="6" rx="3" fill="#F2B544" style="transform-origin:64px 247px"/>
+  <circle class="knob" cx="124" cy="247" r="10" fill="#F2B544"/>
+  <text class="sans" x="64" y="282" font-size="12" fill="#8FA3BA">8 to 64 characters</text>
+
+  <g class="mono" font-size="13" fill="#E6EDF5">
+    <rect x="430" y="214" width="72" height="30" rx="15" fill="#192A3E" stroke="#F2B544"/><text x="466" y="234" text-anchor="middle">A-Z</text>
+    <rect x="512" y="214" width="72" height="30" rx="15" fill="#192A3E" stroke="#F2B544"/><text x="548" y="234" text-anchor="middle">a-z</text>
+    <rect x="594" y="214" width="72" height="30" rx="15" fill="#192A3E" stroke="#F2B544"/><text x="630" y="234" text-anchor="middle">0-9</text>
+    <rect x="676" y="214" width="120" height="30" rx="15" fill="#192A3E" stroke="#F2B544"/><text x="736" y="234" text-anchor="middle">!@#$%^&amp;*</text>
+  </g>
+  <text class="sans" x="430" y="274" font-size="13" fill="#8FA3BA">or a passphrase</text>
+  <text class="mono" x="540" y="274" font-size="13" fill="#4FD1C5">Amber-Falcon-Harbor-Cedar-Lotus</text>
+</svg>

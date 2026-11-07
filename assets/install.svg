@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" role="img" aria-label="Install on Linux and Windows">
+  <title>Install in a few commands</title>
+  <defs>
+    <clipPath id="l1"><rect x="40" y="62" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;380;380" keyTimes="0;0.02;0.12;1"/></rect></clipPath>
+    <clipPath id="l2"><rect x="40" y="88" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;380;380" keyTimes="0;0.14;0.22;1"/></rect></clipPath>
+    <clipPath id="l3"><rect x="40" y="114" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;380;380" keyTimes="0;0.26;0.30;1"/></rect></clipPath>
+    <clipPath id="l4"><rect x="40" y="140" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;380;380" keyTimes="0;0.34;0.40;1"/></rect></clipPath>
+    <clipPath id="l5"><rect x="40" y="166" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;380;380" keyTimes="0;0.44;0.50;1"/></rect></clipPath>
+    <clipPath id="l6"><rect x="40" y="200" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;380;380" keyTimes="0;0.56;0.62;1"/></rect></clipPath>
+    <clipPath id="w1"><rect x="480" y="62" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;390;390" keyTimes="0;0.02;0.12;1"/></rect></clipPath>
+    <clipPath id="w2"><rect x="480" y="88" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;390;390" keyTimes="0;0.14;0.20;1"/></rect></clipPath>
+    <clipPath id="w3"><rect x="480" y="114" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;390;390" keyTimes="0;0.24;0.30;1"/></rect></clipPath>
+    <clipPath id="w4"><rect x="480" y="148" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;390;390" keyTimes="0;0.36;0.42;1"/></rect></clipPath>
+    <clipPath id="w5"><rect x="480" y="174" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;390;390" keyTimes="0;0.46;0.52;1"/></rect></clipPath>
+    <clipPath id="w6"><rect x="480" y="200" height="20"><animate attributeName="width" dur="14s" repeatCount="indefinite" values="0;0;390;390" keyTimes="0;0.56;0.62;1"/></rect></clipPath>
+  </defs>
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif}
+    .mono{font-family:SFMono-Regular,Consolas,'DejaVu Sans Mono',Menlo,monospace;font-size:11.5px}
+    .cmd{fill:#E6EDF5}.ok{fill:#4FD1C5}.dim{fill:#8FA3BA}
+    .cursor{animation:blink 1s steps(1) infinite}
+    @keyframes blink{0%,50%{opacity:1}51%,100%{opacity:0}}
+  </style>
+  <rect width="900" height="330" rx="18" fill="#0B131D"/>
+  <rect x=".5" y=".5" width="899" height="329" rx="18" fill="none" stroke="#263B55"/>
+
+  <rect x="20" y="20" width="420" height="290" rx="12" fill="#121E2D" stroke="#263B55"/>
+  <circle cx="40" cy="38" r="5" fill="#F2706B"/><circle cx="58" cy="38" r="5" fill="#F2B544"/><circle cx="76" cy="38" r="5" fill="#4FD1C5"/>
+  <text class="sans" x="230" y="42" font-size="12" fill="#8FA3BA" text-anchor="middle">Linux</text>
+  <g class="mono">
+    <text clip-path="url(#l1)" class="cmd" x="40" y="77">$ git clone https://github.com/ERROR404DTIR/LocalVault</text>
+    <text clip-path="url(#l2)" class="cmd" x="40" y="103">$ cd LocalVault</text>
+    <text clip-path="url(#l3)" class="cmd" x="40" y="129">$ bash install.sh</text>
+    <text clip-path="url(#l4)" class="ok" x="40" y="155">[ok] Python and Tk found</text>
+    <text clip-path="url(#l5)" class="ok" x="40" y="181">[ok] Installed to ~/.local/share/localvault-app</text>
+    <text clip-path="url(#l6)" class="ok" x="40" y="215">[ok] LocalVault is in your app menu</text>
+    <rect class="cursor" x="40" y="236" width="8" height="15" fill="#F2B544"/>
+  </g>
+
+  <rect x="460" y="20" width="420" height="290" rx="12" fill="#121E2D" stroke="#263B55"/>
+  <circle cx="480" cy="38" r="5" fill="#F2706B"/><circle cx="498" cy="38" r="5" fill="#F2B544"/><circle cx="516" cy="38" r="5" fill="#4FD1C5"/>
+  <text class="sans" x="670" y="42" font-size="12" fill="#8FA3BA" text-anchor="middle">Windows (PowerShell or cmd)</text>
+  <g class="mono">
+    <text clip-path="url(#w1)" class="cmd" x="480" y="77">&gt; git clone https://github.com/ERROR404DTIR/LocalVault</text>
+    <text clip-path="url(#w2)" class="cmd" x="480" y="103">&gt; cd LocalVault</text>
+    <text clip-path="url(#w3)" class="cmd" x="480" y="129">&gt; .\install.bat</text>
+    <text clip-path="url(#w4)" class="ok" x="480" y="163">[ok] Python found</text>
+    <text clip-path="url(#w5)" class="ok" x="480" y="189">[ok] Installed to %LOCALAPPDATA%\LocalVault-app</text>
+    <text clip-path="url(#w6)" class="ok" x="480" y="215">[ok] Desktop and Start Menu shortcuts created</text>
+  </g>
+</svg>
