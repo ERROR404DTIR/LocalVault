@@ -1,0 +1,2 @@
+cryptography>=41
+customtkinter>=5.2
