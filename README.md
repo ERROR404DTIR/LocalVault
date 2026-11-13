@@ -1,5 +1,7 @@
 <div align="center">
 
+<p align="center"><img src="assets/readme-banner.svg" alt="Animated LocalVault privacy banner" width="100%"></p>
+
 <img src="assets/banner.svg" alt="LocalVault: offline, encrypted password manager" width="100%">
 
 **A Bitwarden-style password manager that lives entirely on your computer.**
